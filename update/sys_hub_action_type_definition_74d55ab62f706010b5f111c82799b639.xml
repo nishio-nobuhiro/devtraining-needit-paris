@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>アクション実験</description>
+        <ih_action>false</ih_action>
+        <internal_name/>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>連携アクション</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-04 10:05:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>74d55ab62f706010b5f111c82799b639</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>連携アクション</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_74d55ab62f706010b5f111c82799b639</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-04 10:05:45</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=74d55ab62f706010b5f111c82799b639"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>74d55ab62f706010b5f111c82799b639</documentkey>
+        <fieldname>annotation</fieldname>
+        <language>ja</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-04 10:05:45</sys_created_on>
+        <sys_id>c9d5deb62fb06010b5f111c82799b629</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-04 10:05:45</sys_updated_on>
+        <tablename>sys_hub_action_type_definition</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>74d55ab62f706010b5f111c82799b639</documentkey>
+        <fieldname>description</fieldname>
+        <language>ja</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-04 10:05:45</sys_created_on>
+        <sys_id>b8d55ab62f706010b5f111c82799b63a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-04 10:05:45</sys_updated_on>
+        <tablename>sys_hub_action_type_definition</tablename>
+        <value>アクション実験</value>
+    </sys_translated_text>
+    <sys_variable_value action="delete_multiple" query="document_key=74d55ab62f706010b5f111c82799b639"/>
+</record_update>
