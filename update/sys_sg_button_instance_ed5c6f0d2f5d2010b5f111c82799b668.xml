@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Create Needit">c696eb492f5d2010b5f111c82799b68b</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <field_name/>
+        <icon/>
+        <label>Create Needit</label>
+        <location>top</location>
+        <name>Create Needit</name>
+        <order>10</order>
+        <parent>c8346ccb2f4d6010b5f111c82799b6d7</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-24 02:25:44</sys_created_on>
+        <sys_id>ed5c6f0d2f5d2010b5f111c82799b668</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Needit</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_sg_button_instance_ed5c6f0d2f5d2010b5f111c82799b668</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-24 02:25:44</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=ed5c6f0d2f5d2010b5f111c82799b668"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ed5c6f0d2f5d2010b5f111c82799b668</documentkey>
+        <fieldname>description</fieldname>
+        <language>ja</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-24 02:25:44</sys_created_on>
+        <sys_id>655c6f0d2f5d2010b5f111c82799b669</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-24 02:25:44</sys_updated_on>
+        <tablename>sys_sg_button_instance</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>

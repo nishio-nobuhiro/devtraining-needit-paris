@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Update Priority">bd3c4f492f1d2010b5f111c82799b602</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <field_name/>
+        <icon/>
+        <label>Update Priority</label>
+        <location>top</location>
+        <name>Update Priority</name>
+        <order>10</order>
+        <parent>2823a0cb2f4d6010b5f111c82799b64c</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-24 00:55:14</sys_created_on>
+        <sys_id>f797d3412f5d2010b5f111c82799b689</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Priority</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_sg_button_instance_f797d3412f5d2010b5f111c82799b689</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-24 00:55:14</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=f797d3412f5d2010b5f111c82799b689"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>f797d3412f5d2010b5f111c82799b689</documentkey>
+        <fieldname>description</fieldname>
+        <language>ja</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-24 00:55:14</sys_created_on>
+        <sys_id>7f97d3412f5d2010b5f111c82799b689</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-24 00:55:14</sys_updated_on>
+        <tablename>sys_sg_button_instance</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>
