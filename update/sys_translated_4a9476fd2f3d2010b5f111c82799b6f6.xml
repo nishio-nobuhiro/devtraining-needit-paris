@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <id/>
+        <label>期限切れのNeedItタスクを閉じる</label>
+        <language>ja</language>
+        <name>sys_ui_action</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-20 02:49:02</sys_created_on>
+        <sys_id>4a9476fd2f3d2010b5f111c82799b6f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>期限切れのNeedItタスクを閉じる</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_translated_4a9476fd2f3d2010b5f111c82799b6f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-20 02:49:02</sys_updated_on>
+        <value>期限切れのNeedItタスクを閉じる</value>
+    </sys_translated>
+</record_update>
