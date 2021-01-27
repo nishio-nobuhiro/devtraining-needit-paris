@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>期限切れのNeedItタスクを見つけて、タスクを割り当てられた人に通知するための毎日のプロセス。</description>
+        <internal_name>needit</internal_name>
+        <label_cache>[{"name":"36b8ace3-5eda-43e6-9673-6a83c4e72cce.Records","label":"1➛NeedIt Task Records","reference":"x_58872_needit_needit_task","reference_display":"NeedIt Task Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"36b8ace3-5eda-43e6-9673-6a83c4e72cce.Table","label":"1➛NeedIt Task テーブル","reference":"x_58872_needit_needit_task","reference_display":"NeedIt Task テーブル","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"36b8ace3-5eda-43e6-9673-6a83c4e72cce.Count","label":"1➛カウント","reference_display":"カウント","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f806eed6-f520-463a-9871-fa2b7d7a79be.item","label":"2➛NeedIt Task Record","reference":"x_58872_needit_needit_task","reference_display":"NeedIt Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"652dff00-be12-4ac7-a777-f27150c77017.email","label":"3➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f806eed6-f520-463a-9871-fa2b7d7a79be.item.opened_by.email","label":"2➛NeedIt Task Record➛開始者➛メール","reference":"","reference_display":"メール","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"f806eed6-f520-463a-9871-fa2b7d7a79be.item.assigned_to","label":"2➛NeedIt Task Record➛アサイン先","reference":"sys_user","reference_display":"アサイン先","type":"reference","base_type":"reference","parent_table_name":"x_58872_needit_needit_task","column_name":"assigned_to"},{"name":"f806eed6-f520-463a-9871-fa2b7d7a79be.item.assigned_to.email","label":"2➛NeedIt Task Record➛アサイン先➛メール","reference":"","reference_display":"メール","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"f806eed6-f520-463a-9871-fa2b7d7a79be.item.number","label":"2➛NeedIt Task Record➛番号","reference":"","reference_display":"番号","type":"string","base_type":"string","parent_table_name":"x_58872_needit_needit_task","column_name":"number"},{"name":"f806eed6-f520-463a-9871-fa2b7d7a79be.item.assigned_to.name","label":"2➛NeedIt Task Record➛アサイン先➛名前","reference":"","reference_display":"名前","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"f806eed6-f520-463a-9871-fa2b7d7a79be.item.short_description","label":"2➛NeedIt Task Record➛簡単な説明","reference":"","reference_display":"簡単な説明","type":"string","base_type":"string","parent_table_name":"x_58872_needit_needit_task","column_name":"short_description"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>期限切れのNeedItタスクを見つける</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-22 06:38:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f16c39a22f79a010b5f111c82799b6a8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>期限切れのNeedItタスクを見つける</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_f16c39a22f79a010b5f111c82799b6a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f16c39a22f79a010b5f111c82799b6a8"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>f16c39a22f79a010b5f111c82799b6a8</documentkey>
+        <fieldname>annotation</fieldname>
+        <language>ja</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-22 06:38:59</sys_created_on>
+        <sys_id>796c39a22f79a010b5f111c82799b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-22 06:38:59</sys_updated_on>
+        <tablename>sys_hub_flow</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_variable_value action="delete_multiple" query="document_key=f16c39a22f79a010b5f111c82799b6a8"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=f16c39a22f79a010b5f111c82799b6a8^sys_idNOT IN38a482772f712010b5f111c82799b6d8,7ca482772f712010b5f111c82799b6de,81a4c2772f712010b5f111c82799b61a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="期限切れのNeedItタスクを見つける">f16c39a22f79a010b5f111c82799b6a8</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>38a482772f712010b5f111c82799b6d8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:21</sys_updated_on>
+        <ui_id>36b8ace3-5eda-43e6-9673-6a83c4e72cce</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=38a482772f712010b5f111c82799b6d8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>38a482772f712010b5f111c82799b6d8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>34a482772f712010b5f111c82799b6dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:21</sys_updated_on>
+        <value>x_58872_needit_needit_task</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>38a482772f712010b5f111c82799b6d8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>70a482772f712010b5f111c82799b6dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:21</sys_updated_on>
+        <value>active=true^NQdue_date&lt;=javascript:gs.endOfToday()</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>38a482772f712010b5f111c82799b6d8</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>bca482772f712010b5f111c82799b6db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:21</sys_updated_on>
+        <value>number</value>
+        <variable display_value="">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">34a482772f712010b5f111c82799b6dd</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="期限切れのNeedItタスクを見つける">f16c39a22f79a010b5f111c82799b6a8</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="各">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>7ca482772f712010b5f111c82799b6de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <ui_id>f806eed6-f520-463a-9871-fa2b7d7a79be</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7ca482772f712010b5f111c82799b6de"/>
+    <sys_element_mapping action="delete_multiple" query="id=7ca482772f712010b5f111c82799b6de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>7ca482772f712010b5f111c82799b6de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>70a4c2772f712010b5f111c82799b614</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{36b8ace3-5eda-43e6-9673-6a83c4e72cce.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="期限切れのNeedItタスクを見つける">f16c39a22f79a010b5f111c82799b6a8</flow>
+        <order>3</order>
+        <parent_ui_id>f806eed6-f520-463a-9871-fa2b7d7a79be</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>81a4c2772f712010b5f111c82799b61a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <ui_id>652dff00-be12-4ac7-a777-f27150c77017</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=81a4c2772f712010b5f111c82799b61a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81a4c2772f712010b5f111c82799b61a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>09a4c2772f712010b5f111c82799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <value>x_58872_needit_needit_task</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81a4c2772f712010b5f111c82799b61a</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>45a4c2772f712010b5f111c82799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81a4c2772f712010b5f111c82799b61a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>81a4c2772f712010b5f111c82799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">066bb6b57303230082999cfd7bf6a7c3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=81a4c2772f712010b5f111c82799b61a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>c5a4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:361c5b8e-ca02-46c6-9c9f-e63e7d61409e}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:361c5b8e-ca02-46c6-9c9f-e63e7d61409e}}"&gt;2➛NeedIt Task Record➛アサイン先➛名前&lt;button id="transform_function_facade_361c5b8e-ca02-46c6-9c9f-e63e7d61409e" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;さん&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="line-height: 1.5; font-family: 'Source Sans Pro', sans-serif; letter-spacing: 0.02em; color: #293e40;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;期限切れのNeedItタスクがあなたに割り当てられます：&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="line-height: 1.5; font-family: 'Source Sans Pro', sans-serif; letter-spacing: 0.02em; color: #293e40;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="letter-spacing: 0.16px;"&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style="line-height: 1.5; letter-spacing: 0.02em;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;番号：&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:d10d60ea-8ede-4ee3-80cd-ea70f991a313}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:d10d60ea-8ede-4ee3-80cd-ea70f991a313}}"&gt;2➛NeedIt Task Record➛番号&lt;button id="transform_function_facade_d10d60ea-8ede-4ee3-80cd-ea70f991a313" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="line-height: 1.5; font-family: 'Source Sans Pro', sans-serif; letter-spacing: 0.02em; color: #293e40;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="line-height: 1.5; letter-spacing: 0.02em;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="letter-spacing: 0.16px;"&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style="line-height: 1.5; letter-spacing: 0.02em;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;簡単な説明：&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:6a3a27f8-c5ff-45c1-8fcf-e795b6bf9587}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:6a3a27f8-c5ff-45c1-8fcf-e795b6bf9587}}"&gt;2➛NeedIt Task Record➛簡単な説明&lt;button id="transform_function_facade_6a3a27f8-c5ff-45c1-8fcf-e795b6bf9587" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="line-height: 1.5; font-family: 'Source Sans Pro', sans-serif; letter-spacing: 0.02em; color: #293e40;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="line-height: 1.5; letter-spacing: 0.02em;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;このタスクをできるだけ早く完了してください。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>01a4c2772f712010b5f111c82799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>期限切れのNeedItタスク：{{f806eed6-f520-463a-9871-fa2b7d7a79be.item.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>41a4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f806eed6-f520-463a-9871-fa2b7d7a79be.item.assigned_to.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>89a4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f806eed6-f520-463a-9871-fa2b7d7a79be.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>4da4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>watermark_email</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>05a4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f16c39a22f79a010b5f111c82799b6a8^sys_idNOT IN20a482772f712010b5f111c82799b6d0"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="期限切れのNeedItタスクを見つける">f16c39a22f79a010b5f111c82799b6a8</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:20</sys_created_on>
+        <sys_id>20a482772f712010b5f111c82799b6d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:20</sys_updated_on>
+        <trigger_definition display_value="日次">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=20a482772f712010b5f111c82799b6d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>20a482772f712010b5f111c82799b6d0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>e0a482772f712010b5f111c82799b6d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:21</sys_updated_on>
+        <value>1970-01-01 23:00:00</value>
+        <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f16c39a22f79a010b5f111c82799b6a8^sys_idNOT INf56c39a22f79a010b5f111c82799b6b0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f16c39a22f79a010b5f111c82799b6a8</id>
+        <name>期限切れのNeedItタスクを見つける</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-22 06:38:59</sys_created_on>
+        <sys_id>f56c39a22f79a010b5f111c82799b6b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-22 06:38:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f16c39a22f79a010b5f111c82799b6a8^sys_idNOT IN38a482772f712010b5f111c82799b6d8,81a4c2772f712010b5f111c82799b61a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="期限切れのNeedItタスクを見つける">f16c39a22f79a010b5f111c82799b6a8</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>38a482772f712010b5f111c82799b6d8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:21</sys_updated_on>
+        <ui_id>36b8ace3-5eda-43e6-9673-6a83c4e72cce</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=38a482772f712010b5f111c82799b6d8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>38a482772f712010b5f111c82799b6d8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>34a482772f712010b5f111c82799b6dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:21</sys_updated_on>
+        <value>x_58872_needit_needit_task</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>38a482772f712010b5f111c82799b6d8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>70a482772f712010b5f111c82799b6dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:21</sys_updated_on>
+        <value>active=true^NQdue_date&lt;=javascript:gs.endOfToday()</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>38a482772f712010b5f111c82799b6d8</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>bca482772f712010b5f111c82799b6db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:21</sys_updated_on>
+        <value>number</value>
+        <variable display_value="">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="期限切れのNeedItタスクを見つける">f16c39a22f79a010b5f111c82799b6a8</flow>
+        <order>3</order>
+        <parent_ui_id>f806eed6-f520-463a-9871-fa2b7d7a79be</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>81a4c2772f712010b5f111c82799b61a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <ui_id>652dff00-be12-4ac7-a777-f27150c77017</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=81a4c2772f712010b5f111c82799b61a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81a4c2772f712010b5f111c82799b61a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>09a4c2772f712010b5f111c82799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <value>x_58872_needit_needit_task</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81a4c2772f712010b5f111c82799b61a</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>45a4c2772f712010b5f111c82799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81a4c2772f712010b5f111c82799b61a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>81a4c2772f712010b5f111c82799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">066bb6b57303230082999cfd7bf6a7c3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=81a4c2772f712010b5f111c82799b61a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>c5a4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:361c5b8e-ca02-46c6-9c9f-e63e7d61409e}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:361c5b8e-ca02-46c6-9c9f-e63e7d61409e}}"&gt;2➛NeedIt Task Record➛アサイン先➛名前&lt;button id="transform_function_facade_361c5b8e-ca02-46c6-9c9f-e63e7d61409e" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;さん&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="line-height: 1.5; font-family: 'Source Sans Pro', sans-serif; letter-spacing: 0.02em; color: #293e40;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;期限切れのNeedItタスクがあなたに割り当てられます：&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="line-height: 1.5; font-family: 'Source Sans Pro', sans-serif; letter-spacing: 0.02em; color: #293e40;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="letter-spacing: 0.16px;"&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style="line-height: 1.5; letter-spacing: 0.02em;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;番号：&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:d10d60ea-8ede-4ee3-80cd-ea70f991a313}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:d10d60ea-8ede-4ee3-80cd-ea70f991a313}}"&gt;2➛NeedIt Task Record➛番号&lt;button id="transform_function_facade_d10d60ea-8ede-4ee3-80cd-ea70f991a313" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="line-height: 1.5; font-family: 'Source Sans Pro', sans-serif; letter-spacing: 0.02em; color: #293e40;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="line-height: 1.5; letter-spacing: 0.02em;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="letter-spacing: 0.16px;"&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style="line-height: 1.5; letter-spacing: 0.02em;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;簡単な説明：&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:6a3a27f8-c5ff-45c1-8fcf-e795b6bf9587}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:6a3a27f8-c5ff-45c1-8fcf-e795b6bf9587}}"&gt;2➛NeedIt Task Record➛簡単な説明&lt;button id="transform_function_facade_6a3a27f8-c5ff-45c1-8fcf-e795b6bf9587" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="line-height: 1.5; font-family: 'Source Sans Pro', sans-serif; letter-spacing: 0.02em; color: #293e40;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="line-height: 1.5; letter-spacing: 0.02em;"&gt;&lt;span style="vertical-align: inherit;"&gt;&lt;span style="vertical-align: inherit;"&gt;このタスクをできるだけ早く完了してください。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>01a4c2772f712010b5f111c82799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>期限切れのNeedItタスク：{{f806eed6-f520-463a-9871-fa2b7d7a79be.item.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>41a4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f806eed6-f520-463a-9871-fa2b7d7a79be.item.assigned_to.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>89a4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f806eed6-f520-463a-9871-fa2b7d7a79be.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>4da4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>watermark_email</field>
+        <id>81a4c2772f712010b5f111c82799b61a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>05a4c2772f712010b5f111c82799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=81a4c2772f712010b5f111c82799b61a^sys_idNOT IN49a4c2772f712010b5f111c82799b61b,c1a4c2772f712010b5f111c82799b61c"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>watermark_email</input_name>
+        <instance>81a4c2772f712010b5f111c82799b61a</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"watermark_email":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>49a4c2772f712010b5f111c82799b61b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_to</input_name>
+        <instance>81a4c2772f712010b5f111c82799b61a</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_to":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>c1a4c2772f712010b5f111c82799b61c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f16c39a22f79a010b5f111c82799b6a8^sys_idNOT IN7ca482772f712010b5f111c82799b6de"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">34a482772f712010b5f111c82799b6dd</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="期限切れのNeedItタスクを見つける">f16c39a22f79a010b5f111c82799b6a8</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="各">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:21</sys_created_on>
+        <sys_id>7ca482772f712010b5f111c82799b6de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <ui_id>f806eed6-f520-463a-9871-fa2b7d7a79be</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7ca482772f712010b5f111c82799b6de"/>
+    <sys_element_mapping action="delete_multiple" query="id=7ca482772f712010b5f111c82799b6de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>7ca482772f712010b5f111c82799b6de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>70a4c2772f712010b5f111c82799b614</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{36b8ace3-5eda-43e6-9673-6a83c4e72cce.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f16c39a22f79a010b5f111c82799b6a8^sys_idNOT IN01a4c2772f712010b5f111c82799b622,41a4c2772f712010b5f111c82799b621,4da4c2772f712010b5f111c82799b621,89a4c2772f712010b5f111c82799b621"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f16c39a22f79a010b5f111c82799b6a8</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f806eed6-f520-463a-9871-fa2b7d7a79be.item.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>01a4c2772f712010b5f111c82799b622</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d10d60ea-8ede-4ee3-80cd-ea70f991a313</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f16c39a22f79a010b5f111c82799b6a8</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f806eed6-f520-463a-9871-fa2b7d7a79be.item.assigned_to.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>41a4c2772f712010b5f111c82799b621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>361c5b8e-ca02-46c6-9c9f-e63e7d61409e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f16c39a22f79a010b5f111c82799b6a8</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f806eed6-f520-463a-9871-fa2b7d7a79be.item.short_description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>4da4c2772f712010b5f111c82799b621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6a3a27f8-c5ff-45c1-8fcf-e795b6bf9587</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f16c39a22f79a010b5f111c82799b6a8</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f806eed6-f520-463a-9871-fa2b7d7a79be.item.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-26 04:27:22</sys_created_on>
+        <sys_id>89a4c2772f712010b5f111c82799b621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-26 04:27:22</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>88eb85ff-6b70-4b52-8f8a-d1ebb5ff3ef7</ui_id>
+    </sys_hub_pill_compound>
+</record_update>
